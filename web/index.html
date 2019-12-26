@@ -3,25 +3,41 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="scaffolded-by" content="https://github.com/dart-lang/stagehand">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="scaffolded-by" content="https://github.com/dart-lang/stagehand" />
   <title>Nums</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+
   <script defer src="main.dart.js"></script>
 </head>
 
 <body>
-  <div class="bar"></div>
+  <div class="header">
+    <div class="logo-title">Memboost</div>
+  </div>
   <div class="container">
-    <div class="board">
-      <div class="body"></div>
+    <div class="game-board">
+      <div class="top-board">
+        <div class="rule-board">
+          <p class="rule-text">
+            Стрелками влево или вправо укажите какое число или выражение больше.
+            Если правое и левое число равны нажмите стрелку вниз или вверх.
+          </p>
+            <div class="row center"><button id="bRule">Понятно</button></div> 
+        </div>
+      </div>
+      <div class="game-field">
+        <div class="box">28/3</div>
+        <div class="box">16-5</div>
+
+      </div>
+      <div class="game-control"></div>
     </div>
   </div>
-
-
 </body>
 
 </html>
